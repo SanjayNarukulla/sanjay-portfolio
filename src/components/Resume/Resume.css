@@ -1,0 +1,244 @@
+/* ========== Base Resume Container ========== */
+.resume {
+  padding: 30px 80px;
+  background-color: transparent;
+}
+
+/* ========== Section Title ========== */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Segoe UI", sans-serif;
+  color: #1a1a1a;
+  font-size: 40px;
+}
+
+.dark-theme .section-title {
+  color: #fff;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+  color: inherit;
+}
+
+/* ========== Layout Grid ========== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* ========== Resume Block Titles ========== */
+.resume-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #1a1a1a;
+}
+
+.dark-theme .resume-title {
+  color: #fff;
+}
+
+/* ========== Resume Card Styles ========== */
+.resume-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #a29bfe;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease;
+}
+
+.port-link {
+  color: #a29bfe;
+  text-decoration: none;
+}
+
+.port-link:hover {
+  color: #fff700;
+}
+.dark-theme .resume-item {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* ========== Resume Text Content ========== */
+.resume-item h4 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+  color: #a29bfe;
+}
+
+.dark-theme .resume-item h4 {
+  color: #a29bfe;
+}
+
+.resume-item h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.resume-item p,
+.resume-item ul {
+  margin: 10px 0;
+  color: #333;
+}
+
+.dark-theme .resume-item h5,
+.dark-theme .resume-item p,
+.dark-theme .resume-item ul {
+  color: #f3f3f3;
+}
+
+.resume-item ul {
+  padding-left: 20px;
+}
+
+/* ========== Download Button ========== */
+.download-btn {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.download-btn .btn {
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #a29bfe, #665cff);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.download-btn .btn:hover {
+  background: #665cff;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .resume {
+    padding: 20px 40px;
+  }
+
+  .section-title,
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .resume-title {
+    font-size: 20px;
+  }
+
+  .resume-item h4 {
+    font-size: 18px;
+  }
+
+  .resume-item h5 {
+    font-size: 14px;
+  }
+
+  .download-btn .btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .resume {
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .section-title,
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .resume-title {
+    font-size: 18px;
+  }
+
+  .resume-item {
+    padding: 16px;
+  }
+
+  .resume-item h4 {
+    font-size: 16px;
+  }
+
+  .resume-item h5,
+  .resume-item p,
+  .resume-item ul {
+    font-size: 14px;
+  }
+
+  .download-btn .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .resume {
+    padding: 16px;
+  }
+
+  .section-title,
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .resume-title {
+    font-size: 16px;
+  }
+
+  .resume-item {
+    padding: 14px;
+  }
+
+  .resume-item h4 {
+    font-size: 15px;
+  }
+
+  .resume-item h5,
+  .resume-item p,
+  .resume-item ul {
+    font-size: 13px;
+  }
+
+  .download-btn .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
